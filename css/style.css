@@ -1,3 +1,44 @@
 body {
     background-color: tan;
 }
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+label {
+    text-align: center;
+}
+.centerChildren {
+    display: flex;
+    justify-content: center;
+    /* or on the button:
+    display: block;
+    margin: 0 auto; */
+}
+
+button {
+    margin: 5px;
+}
+
+@media (min-width: 600px){
+    .info {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .students {
+        display: flex;
+        justify-content: space-around;
+        /* or
+        display:grid;
+        grid-template-columns: 1fr 1fr */
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    button {
+        margin: 50px;
+    }
+}
